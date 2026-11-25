@@ -1,10 +1,48 @@
-// Project Title
-// Your Name
-// Date
+// Capstone Project
+// Newell Devera
+// START DATE : 11/25/2026
 //
-// Extra for Experts:
-// - describe what you did to take this project "above and beyond"
 
+let player;
+let playerSettings = {
+  x : 0,
+  y : 0,
+  dx : 0,
+  dy : 0,
+  walkspeed : 10,
+  size : 50,
+} ;
+
+let inventory;
+
+let keyInputStorage = [];
+
+class Weapons {
+  constructor() {
+
+  }
+}
+
+class Entities {
+  constructor() {
+
+  }
+}
+
+class Player extends Entities {
+  constructor(settings) {
+    this.x = settings.x;
+    this.y = settings.y;
+    this.dx = settings.dx;
+    this.dy = settings.dy;
+    this.walkspeed = settings.walkspeed;
+    this.size = settings.size;
+  }
+
+  move() {
+
+  }
+}
 
 async function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -13,5 +51,11 @@ async function setup() {
 function draw() {
   background(220);
 
-  circle(mouseX, mouseY, 500);
+  recordKeyInputs();
+}
+
+
+
+function recordKeyInputs() {
+  console.log(key);
 }
