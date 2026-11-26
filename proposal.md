@@ -2,7 +2,7 @@
 
 ## Description
 
-Weapon sim (maybe boss fight)
+- Translating “ULTRAKILL-esque” combat into 2d and combining it with the DMC5 sandbox area.
 
 ## Needs To Have List
 
