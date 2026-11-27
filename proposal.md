@@ -2,7 +2,7 @@
 
 ## Description
 
-- Translating “ULTRAKILL-esque” combat into 2d and combining it with the DMC5 sandbox area.
+- Translating “ULTRAKILL-esque” combat into 2d and combining it with the DMC5 sandbox.
 
 ## Needs To Have List
 
