@@ -15,7 +15,15 @@ let playerSettings = {
 
 let inventory;
 
-let keyInputStorage = [];
+let keys = {
+  w : false,
+  a : false,
+  s : false,
+  d : false,
+} ;
+
+
+
 
 class Weapons {
   constructor() {
@@ -40,7 +48,6 @@ class Player extends Entities {
   }
 
   move() {
-
   }
 }
 
@@ -50,12 +57,19 @@ async function setup() {
 
 function draw() {
   background(220);
+  recordIfKeyDown(key);
 
-  recordKeyInputs();
+
+}
+
+
+function recordIfKeyDown(e) {
+  if (`${e}` in keys && keyIsDown(e)) {
+    let find = keys.find(thing => thing.e )
+    console.log(keys.hasOwnProperty(e));
+  }
 }
 
 
 
-function recordKeyInputs() {
-  console.log(key);
-}
+
